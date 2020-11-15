@@ -1,0 +1,19 @@
+void Ｍ１／酒場／うろろーん／＋蒸発の実()
+{
+	セリフ(1014, "");
+	'"H-Huh...?"' AX;
+	セリフ(1001, "");
+	'"What is it?"' AX;
+	セリフ(1011, "");
+	'"Inside the food, there\'s an [evaporation fruit]..."' AX;
+	'The evaporation fruit fell onto the table.' AX;
+	セリフ(1001, "");
+	'"Sweet! Must be because of my karma!"' AX;
+	セリフ(1011, "");
+	'"The bartender must have dropped it while he was' R;
+	'`working. Isn\'t that great, Master?"' AX;
+	セリフ(1001, "");
+	'"Yep, now we can search for that key."' AX;
+	'And so, we obtained an [evaporation fruit].' AX;
+	return;
+}

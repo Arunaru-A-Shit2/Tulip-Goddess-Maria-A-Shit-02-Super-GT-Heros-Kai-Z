@@ -1,0 +1,20 @@
+void アイ共通_ｲﾅｽﾞﾏ()
+{
+	if (所持金() < 200)
+	{
+		アイ共通_OUT();
+		return;
+	}
+	セリフ(1141, "");
+	'"The lightning sword, then? That\'ll be 200 Gold."' AX;
+	セリフ(1001, "");
+	'"Do I get anything extra with it?"' AX;
+	セリフ(1141, "");
+	'"I\'ll throw in a Seirogan, then."' AX;
+	'Bought the lightning sword. The moment Rance' R;
+	'equipped the sword, his previous weapon dissolved.' AX;
+	お支払い(200);
+	世色癌 += 1;
+	武器変更(1, 2);
+	return;
+}

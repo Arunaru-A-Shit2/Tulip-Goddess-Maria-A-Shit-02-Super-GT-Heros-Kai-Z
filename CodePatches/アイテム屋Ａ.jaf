@@ -1,0 +1,71 @@
+void アイテム屋Ａ()
+{
+	E_CLEAR();
+	for (; ; )
+	{
+		if (▲アイテム屋／初 == 0)
+		{
+			▲アイテム屋／初 = 1;
+			Ｍ１／アイテム屋／初();
+			break;
+		}
+		ミニ背景(11521, 1);
+		音楽再生(23);
+		ＳＰ表示(141, 1);
+		'"Welcome, yes?"' AX;
+		セリフ(1001, "");
+		'"You\'re so annoying. Get rid of the fucking question' R;
+		'`mark."' AX;
+		セリフ(1141, "");
+		'"It\'s a precious part of my identity, so I\'m afraid I can\'t' R;
+		'`do thaaat."' AX;
+		セリフ(1001, "");
+		'"......' R;
+		'`(_Pissed off)"' AX;
+		break;
+	}
+	while (true)
+	{
+		字速変更(0);
+		'(Money: ' N(所持金(), 0, 0);
+		', Seirogan: ' N(世色癌, 0, 0);
+		')' B;
+		字速変更(1);
+		選択肢登録(1, "Look", -1, 0);
+		選択肢登録(2, "Talk", -1, 0);
+		選択肢登録(3, "Ask", -1, 0);
+		選択肢登録(4, "Buy", -1, 0);
+		if (E03 != 9)
+		{
+			選択肢登録(5, "Assault", -1, 0);
+		}
+		選択肢登録(9, "Leave", 0, 0);
+		int sel = 選択実行(0, 0);
+		if (sel == 1)
+		{
+			アイＡ_見る();
+		}
+		if (sel == 2)
+		{
+			アイＡ_話す();
+		}
+		if (sel == 3)
+		{
+			アイＡ_聞く女の子();
+		}
+		if (sel == 4)
+		{
+			アイＡ_買う();
+		}
+		if (sel == 5)
+		{
+			アイＡ_襲う女の子();
+		}
+		if (sel == 9)
+		{
+			アイＡ_出る();
+			return;
+		}
+	}
+	return;
+}

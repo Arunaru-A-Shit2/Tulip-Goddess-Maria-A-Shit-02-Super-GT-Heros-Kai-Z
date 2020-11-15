@@ -1,0 +1,11 @@
+void キャＲ_MD02()
+{
+	世色癌 = 世色癌 - 1;
+	ＨＰ回復(3, 10, 1);
+	セリフ(1021, "");
+	'"It\'s better for you the worse it tastes, right?"' R;
+	'We\'ve got' R;
+	N(世色癌, 0, 0);
+	' Seirogan left.' AX;
+	return;
+}

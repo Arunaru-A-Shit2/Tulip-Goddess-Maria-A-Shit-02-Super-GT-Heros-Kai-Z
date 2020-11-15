@@ -1,0 +1,63 @@
+void Ｍ１／情報()
+{
+	if (▲湖蒸発 == 1 && にんじんの鍵 == 0)
+	{
+		セリフ(1014, "");
+		'"Umm... I suppose my next task is to find the carrot key' R;
+		'`in the dried-up lake."' AX;
+		return;
+	}
+	if (▲湖蒸発 == 0)
+	{
+		if (▲にんじんの鍵の話 == 5)
+		{
+			セリフ(1014, "");
+			'"Why don\'t we use the evaporation fruit on the underground' R;
+			'`lake?"' AX;
+			return;
+		}
+		if (▲にんじんの鍵の話 == 4)
+		{
+			セリフ(1014, "");
+			'"It\'s too bad the bartender dropped the evaporation fruit' R;
+			'`while he was [cooking], huh?"' AX;
+			return;
+		}
+		if (▲にんじんの鍵の話 == 3)
+		{
+			セリフ(1014, "");
+			'"Maybe we should ask the bartender for an' R;
+			'`evaporation fruit?"' AX;
+			return;
+		}
+		if (▲にんじんの鍵の話 == 2)
+		{
+			セリフ(1014, "");
+			'"We should find an evaporation fruit and use that to' R;
+			'`evaporate the underground lake."' AX;
+			return;
+		}
+		if (▲にんじんの鍵の話 == 1)
+		{
+			セリフ(1014, "");
+			'"The carrot key is somewhere in the underground lake,' R;
+			'`right, Master?"' AX;
+			return;
+		}
+	}
+	if (▲ネイの場所 == 1 && ▲にんじんの鍵の話 == 0)
+	{
+		if (▲ネイの依頼 == 1)
+		{
+			セリフ(1014, "");
+			'"Nay has asked us to find her frog earring."' AX;
+			return;
+		}
+		セリフ(1014, "");
+		'"Should we take a break at the bar?"' AX;
+		return;
+	}
+	セリフ(1011, "");
+	'"Mm...kay. I\'ve set up the tent."' AX;
+	return;
+}

@@ -1,0 +1,55 @@
+void 教会Ａ_聞く女の子()
+{
+	if (E03 == 0)
+	{
+		E03 = 1;
+		セリフ(1001, "");
+		'"Got any info on the dungeon?"' AX;
+		セリフ(1151, "");
+		'"My father took my mother and went to the dungeon,' R;
+		'`actually, but... they never came back. That\'s why I\'m' R;
+		'`the one running the church now."' AX;
+		セリフ(1003, "");
+		'"Oh yeah? That\'s rough."' AX;
+		セリフ(1151, "");
+		'"Sure is. Though it\'s finally getting a little easier now' R;
+		'`that I\'ve figured out how to best scam people."' AX;
+		セリフ(1003, "");
+		'"......"' AX;
+		return;
+	}
+	if (E03 == 1)
+	{
+		E03 = 2;
+		セリフ(1001, "");
+		'"Got any other information?"' AX;
+		セリフ(1151, "");
+		'"If lies are okay, I\'ve got plenty."' AX;
+		セリフ(1001, "");
+		'"Hmm, that could be fun. Let\'s hear it."' AX;
+		セリフ(1151, "");
+		'"If you go to the mayor\'s house without any Seirogan,' R;
+		'`he\'ll give you ten of them."' AX;
+		セリフ(1151, "");
+		'"What you need to do is talk to the mayor four times,' R;
+		'`then leave right after the fourth time, so be careful."' AX;
+		セリフ(1001, "");
+		'"Oh, and I bet one of the Seirogans is actually a \'Balls' R;
+		'`of Life\' that you can sell to the item shop for 5,000' R;
+		'`Gold."' AX;
+		セリフ(1151, "");
+		'"Wow, you know your stuff."' AX;
+		セリフ(1001, "");
+		'"Heheh, yeah, I do."' AX;
+		セリフ(1011, "");
+		'"These are lies, though, remember?"' AX;
+		return;
+	}
+	セリフ(1001, "");
+	'"Gimme some info."' AX;
+	セリフ(1151, "");
+	'"Then gimme some money."' AX;
+	セリフ(1001, "");
+	'"When\'d you turn this place into an info shop?"' AX;
+	return;
+}

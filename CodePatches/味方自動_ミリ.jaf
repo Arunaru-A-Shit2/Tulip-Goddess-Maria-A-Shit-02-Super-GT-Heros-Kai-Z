@@ -1,0 +1,20 @@
+int 味方自動_ミリ(ref 敵データ e)
+{
+	if (睡眠確認(4))
+	{
+		return 0;
+	}
+	if (世色癌 != 0 && ＨＰ確認(4) < 25)
+	{
+		世色癌--;
+		'Milli used a Seirogan.' R;
+		R();
+		'Milli\'s health recovered.' B;
+		味方エフェクト(51, 4, ＨＰ回復(4, 10, 1), 0, 1);
+		AX();
+		味方エフェクト(-1, 0, -1, 1, 0);
+		return 0;
+	}
+	return 味方武器攻撃処理(4, e, 0);
+	return 0;
+}

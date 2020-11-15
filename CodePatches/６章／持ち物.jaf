@@ -1,0 +1,68 @@
+void ６章／持ち物()
+{
+	'[Money]' R;
+	'' R;
+	N(所持金(), 0, 0);
+	' Gold.' AX;
+	if (元気薬 != 0)
+	{
+		'[Seirogan 2]' R;
+		'Happiness Pharmaceutical\'s cure-all drug.' R;
+		'Fully recovers HP.' R;
+		'Currently' R;
+		N(元気薬, 0, 0);
+		' in possession.' AX;
+	}
+	if (◆杭 == 1)
+	{
+		'[Stake]' R;
+		'Just a plain wooden stake.' AX;
+	}
+	if (◆メモ == 1)
+	{
+		ミニビジュアル(11131, 1, 1);
+		'[Note]' R;
+		'Found in Shizuka\'s bookcase.' R;
+		'It must mean something.' AX;
+		ミニビジュアル(0, 1, 1);
+	}
+	if (ﾛｰﾌﾟ == 1)
+	{
+		'[SM Rope]' R;
+		'Bought at a strange shop.' R;
+		'It was a ripoff at 5,000 Gold, though.' R;
+		'I bought it, but...' AX;
+	}
+	if (ﾑﾁ == 1)
+	{
+		'[SM Whip]' R;
+		'A high-quality whip I bought for 10,000 Gold.' R;
+		'I know I chose to buy it, but what was I thinking, really?' AX;
+	}
+	if (ﾋﾞﾔｸ == 1)
+	{
+		'[Red Perfume]' R;
+		'Found on a Ralga\'s cat.' R;
+		'' AX;
+		'If I put on this perfume, I can counteract Ralga\'s' R;
+		'pheromones.' R;
+		'It kind of smells like roses.' AX;
+	}
+	if (▲志津香の鍵 == 1)
+	{
+		'[Mansion Key]' R;
+		'The key to the front door of Shizuka\'s mansion.' R;
+		'We can come and go as we please with this.' AX;
+	}
+	'[Phiel Ring]' R;
+	'The rings Maria, Mill, and Ran had.' R;
+	'They\'re powerful rings that have absorbed ten' R;
+	'people\'s magic power each, but if you put one on, you' R;
+	'turn into a bad guy. Only one left to get is Shizuka\'s.' AX;
+	'[Sill Plain]' R;
+	'My slave, a level '	N(CD[2].レベル, 0, 0);' mage.' R;
+	'She helps with battle, housework, taking care of me, and' R;
+	'relieving my sexual desires.' R;
+	'She\'s super useful and can do basically anything.' AX;
+	return;
+}

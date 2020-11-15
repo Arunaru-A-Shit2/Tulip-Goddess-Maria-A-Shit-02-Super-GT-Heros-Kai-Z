@@ -1,0 +1,41 @@
+int 味方自動_マリア(ref 敵データ e)
+{
+	if (睡眠確認(3))
+	{
+		return 0;
+	}
+	if (世色癌 != 0)
+	{
+		if (ＨＰ確認(3) < 20)
+		{
+			世色癌--;
+			'Maria used a Seirogan.' R;
+			R();
+			'Maria\'s health recovered.' B;
+			味方エフェクト(51, 3, ＨＰ回復(3, 10, 1), 0, 1);
+			AX();
+			味方エフェクト(-1, 0, -1, 1, 0);
+			return 0;
+		}
+		if (ＨＰ確認(1) < 20)
+		{
+			世色癌--;
+			'Maria "Rance, have a Seirogan."' R;
+			R();
+			'Maria tossed a Seirogan into my mouth.' B;
+			味方エフェクト(51, 1, ＨＰ回復(1, 10, 1), 0, 1);
+			AX();
+			味方エフェクト(-1, 0, -1, 1, 0);
+			return 0;
+		}
+	}
+	if (武器確認(3) != 23)
+	{
+		'Maria "You can do it, Rance!"' R;
+		R();
+		'Maria couldn\'t fight, so she cheered me on.' AX;
+		return 0;
+	}
+	return 味方武器攻撃処理(3, e, 0);
+	return 0;
+}

@@ -1,0 +1,64 @@
+void –ò‰®‚y()
+{
+	E_CLEAR();
+	for (; ; )
+	{
+		if (£–ò‰®‰ == 0)
+		{
+			£–ò‰®‰ = 1;
+			‚l‚U^–ò‰®^‰();
+			break;
+		}
+		‰¹ŠyÄ¶(23);
+		“üê•\¦(11631, 405);
+		ƒZƒŠƒt(1053, "");
+		'"Well, if it isn\'t Rance! You\'re gonna buy something,' R;
+		'`right?"' AX;
+		ƒZƒŠƒt(1001, "");
+		'"If you\'ve got anything good."' AX;
+		ƒZƒŠƒt(1062, "");
+		'"Buy something, buy something!"' AX;
+		break;
+	}
+	while (true)
+	{
+		š‘¬•ÏX(0);
+		'(Money: ' N(Š‹à(), 0, 0);
+		', Seirogan 2: ' N(Œ³‹C–ò, 0, 0);
+		')' B;
+		š‘¬•ÏX(1);
+		‘I‘ğˆ“o˜^(1, "Look", -1, 0);
+		‘I‘ğˆ“o˜^(2, "Talk", -1, 0);
+		‘I‘ğˆ“o˜^(3, "Ask", -1, 0);
+		‘I‘ğˆ“o˜^(4, "Buy", -1, 0);
+		‘I‘ğˆ“o˜^(5, "Assault", -1, 0);
+		‘I‘ğˆ“o˜^(6, "Leave", 0, 0);
+		int sel = ‘I‘ğÀs(0, 0);
+		if (sel == 1)
+		{
+			–ò‰®‚y_Œ©‚é();
+		}
+		if (sel == 2)
+		{
+			–ò‰®‚y_˜b‚·();
+		}
+		if (sel == 3)
+		{
+			–ò‰®‚y_•·‚­();
+		}
+		if (sel == 4)
+		{
+			–ò‰®‚y_”ƒ‚¤ƒNƒXƒŠ();
+		}
+		if (sel == 5)
+		{
+			–ò‰®‚y_P‚¤();
+		}
+		if (sel == 6)
+		{
+			–ò‰®‚y_o‚é();
+			return;
+		}
+	}
+	return;
+}

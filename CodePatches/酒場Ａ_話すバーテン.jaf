@@ -1,0 +1,88 @@
+void 酒場Ａ_話すバーテン()
+{
+	ＳＰ表示(363, 1);
+	if (▲にんじんの鍵の話 == 3)
+	{
+		▲にんじんの鍵の話 = 4;
+		セリフ(1321, "");
+		'"Is something the matter, sir? Just let me know if you\'d' R;
+		'`like something to drink."' AX;
+		'The hanny spoke in a kind, warm voice.' AX;
+		'How creepy... It\'s a haniwa...' AX;
+		セリフ(1001, "");
+		'"Hmm. What can you make, anyway?"' AX;
+		セリフ(1321, "");
+		'"How about a Red I?"' AX;
+		セリフ(1001, "");
+		'"I dunno what that is, but sure."' AX;
+		セリフ(1321, "");
+		'"One moment, then."' AX;
+		'Shake, shake! Shake, shake!' AX;
+		セリフ(1321, "");
+		'"Oh."' AX;
+		'Slip! Crash! Splash!' AX;
+		セリフ(1321, "");
+		'"I-I\'m terribly sorry. I\'ll make a new one right away."' AX;
+		'Shake, shake! Shake, shake!' AX;
+		'Slip! Crash! Splash!' AX;
+		セリフ(1321, "");
+		'"Aaah... I-I just need a little more time..."' AX;
+		'Shake, shake! Shake, shake!' AX;
+		'Slip! Crash! Splash!' AX;
+		セリフ(1321, "");
+		'"A-Aaah... Aaah... I... I..."' AX;
+		'He tried the same thing about ten times before he finally' R;
+		'finished the Red I.' AX;
+		セリフ(1321, "");
+		'"H-Here you are... Thank you... for waiting. Hahh,' R;
+		'`hahh..."' AX;
+		セリフ(1001, "");
+		'"Mhm..."' AX;
+		'I brought the drink to my lips, and...' AX;
+		セリフ(1001, "");
+		'"Wait, this is no time to be having a drink."' AX;
+		'Toss! Crash! Splash!' AX;
+		セリフ(1321, "");
+		'"Aaaaaah... Aaaaaah... Aaah... Aaah... Aaah..."' AX;
+		セリフ(1001, "");
+		'"Hey, you\'ve got an evaporation fruit, right? Hand it over. To' R;
+		'`me. Right now."' AX;
+		セリフ(1321, "");
+		'"*sob* *sob* *sob* What\'s with this guy... He\'s' R;
+		'`scary..."' AX;
+		セリフ(1001, "");
+		'"Whatever, just hand over the evaporation fruit already!"' AX;
+		セリフ(1321, "");
+		'"I don\'t have it. So there."' AX;
+		セリフ(1001, "");
+		'"What was that?"' AX;
+		セリフ(1321, "");
+		'"I dropped it while I was cooking. I was going to use it in a' R;
+		'`dish, too..."' AX;
+		セリフ(1001, "");
+		'"That better be the truth..."' AX;
+		セリフ(1321, "");
+		'"I-It is."' AX;
+		セリフ(1014, "");
+		'"Well, there\'s nothing we can do if he doesn\'t have it...' R;
+		'`What should we do now, though...?"' AX;
+		セリフ(1001, "");
+		'"Hmmm..."' AX;
+		return;
+	}
+	if (▲にんじんの鍵の話 == 4)
+	{
+		セリフ(1321, "");
+		'"Everyone\'s so mean to me... *sob* *sob*"' AX;
+		セリフ(1013, "");
+		'"Poor thing..."' AX;
+		ＳＰ表示(373, 1);
+		セリフ(1351, "");
+		'"By the way, my name\'s Takoyaki."' AX;
+		'The takoyaki next to us said.' AX;
+		return;
+	}
+	セリフ(1321, "");
+	'"My name\'s Suzuki. Don\'t forget it, okay?"' AX;
+	return;
+}

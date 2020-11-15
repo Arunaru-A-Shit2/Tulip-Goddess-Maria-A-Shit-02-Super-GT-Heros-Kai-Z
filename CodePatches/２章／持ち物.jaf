@@ -1,0 +1,111 @@
+void ２章／持ち物()
+{
+	'[Money]' R;
+	'' R;
+	N(所持金(), 0, 0);
+	' Gold.' AX;
+	if (世色癌 != 0)
+	{
+		'[Seirogan]' R;
+		'Happiness Pharmaceutical\'s cure-all drug.' R;
+		'Recovers 10 HP.' R;
+		'Currently' R;
+		N(世色癌, 0, 0);
+		' in possession.' AX;
+	}
+	if (帰り木 != 0)
+	{
+		'[Return Wood]' R;
+		'A convenient item that returns the user to town from' R;
+		'anywhere in the dungeon (one-use).' R;
+		'Currently' R;
+		N(帰り木, 0, 0);
+		' in possession.' AX;
+	}
+	if (ｵﾌﾀﾞ == 1)
+	{
+		'[Talisman]' R;
+		'It\'s got a picture of a smiling devil on it.' AX;
+	}
+	if (▲ルビー == 1)
+	{
+		'[Ruby]' R;
+		'A beautiful crimson gem.' R;
+		'Nabbed from a corpse.' AX;
+	}
+	if (ﾘﾝｺﾞ == 1)
+	{
+		'[Peach Apple]' R;
+		'A sparkling, pink apple.' R;
+		'It doesn\'t really look like food when it\'s so shiny.' AX;
+	}
+	if (ｳﾊｱﾝ == 1)
+	{
+		'[Uhaahn]' R;
+		'Food from the bar.' R;
+		'In a takeout box.' AX;
+	}
+	if (▲写真家 == 1)
+	{
+		'[Picture]' R;
+		'A dirty picture from Pepe the photographer.' R;
+		'I need to remember to use this.' AX;
+	}
+	if (▲写真家 > 1)
+	{
+		'[Dirty Picture of Maria]' R;
+		'A perfect shot of Maria changing clothes.' R;
+		'The candidness of the shot is what makes it sexy.' AX;
+	}
+	if (◆石盤 != 0)
+	{
+		if (▲鏡の儀式 == 0)
+		{
+			'[Stone Tablet]' R;
+			'Picked up in the pyramid.' R;
+			'It\'s got something written on it, but we can\'t read it.' AX;
+		}
+		if (▲鏡の儀式 != 0)
+		{
+			'[Stone Tablet]' R;
+			'We\'ve got' R;
+			N(◆石盤, 0, 0);
+			' of them.' R;
+			'Each of them describes a method for activating the warp' R;
+			'devices.' AX;
+		}
+	}
+	if (ﾗｲﾄ == 1)
+	{
+		'[Light]' R;
+		'A magic-powered light.' R;
+		'It runs on matches, so even if you can\'t use magic, you' R;
+		'can activate it.' AX;
+	}
+	if (◆鉄の板 == 1 && ▲章 == 2)
+	{
+		'[Metal Plate]' R;
+		'Picked up in the mirror room.' R;
+		'It\'s a little rusted... Hm...?' R;
+		'There\'s something written on it, but I can\'t read it.' AX;
+	}
+	if (▲トマトエロ == 1)
+	{
+		'[Mimic\'s Mother]' R;
+		'The mother of Tomato\'s pet.' R;
+		'If I give her this, I\'ll get the chance to fuck Tomato.' R;
+		'Gotta be careful with it, since it\'s a living thing.' AX;
+	}
+	'[Phiel Ring]' R;
+	'The ring Maria had.' R;
+	'It\'s sucked up ten people\'s magic and is super' R;
+	'powerful, but you turn evil if you put it on, I guess.' AX;
+	'[Maria Custard]' R;
+	'My new slave.' AX;
+	if (▲章 == 4)
+	{
+		'[Milli Yorks]' R;
+		'This one\'s my slave, too.' AX;
+	}
+	return;
+}

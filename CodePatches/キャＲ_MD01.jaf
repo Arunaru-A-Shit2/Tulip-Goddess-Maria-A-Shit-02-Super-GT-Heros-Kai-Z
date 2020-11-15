@@ -1,0 +1,12 @@
+void キャＲ_MD01()
+{
+	世色癌 -= 1;
+	ＨＰ回復(1, 10, 1);
+	セリフ(1001, "");
+	'"*gulp*... Yuck."' R;
+	'We\'ve got' R;
+	N(世色癌, 0, 0);
+	' Seirogan left.' AX;
+	return;
+	return;
+}

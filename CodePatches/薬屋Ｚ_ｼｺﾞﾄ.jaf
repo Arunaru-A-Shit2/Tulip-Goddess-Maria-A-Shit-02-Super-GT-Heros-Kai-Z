@@ -1,0 +1,27 @@
+void 薬屋Ｚ_ｼｺﾞﾄ()
+{
+	if (E05 == 0)
+	{
+		E05 = 1;
+		セリフ(1001, "");
+		'"How\'s work going?"' AX;
+		セリフ(1053, "");
+		'"Pretty great, actually. We can\'t keep these Seirogan' R;
+		'`2s on the shelf. They let you fight for 24 hours straight."' AX;
+		return;
+	}
+	セリフ(1001, "");
+	'"Why do you run a drugstore, anyway?"' AX;
+	セリフ(1053, "");
+	'"They never go under, since people always need drugs."' AX;
+	セリフ(1053, "");
+	'"Of course, our original store literally went under in that' R;
+	'`magic battle. But this store was available, so I figured I' R;
+	'`should take the opportunity and use it."' AX;
+	セリフ(1003, "");
+	'"Wow, you actually put some thought into it."' AX;
+	セリフ(1053, "");
+	'"You know, I\'ve been wondering. Just what do you think' R;
+	'`I am?"' AX;
+	return;
+}

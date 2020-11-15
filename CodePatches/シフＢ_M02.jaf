@@ -1,0 +1,33 @@
+void シフＢ_M02()
+{
+	音楽再生(29);
+	セリフ(1002, "");
+	'"Geheheh... I wouldn\'t mind helping you, but..."' AX;
+	セリフ(1011, "");
+	'"Master, don\'t you feel sorry for her...?"' AX;
+	'Grind, grind, grind, grind...' AX;
+	セリフ(1013, "");
+	'"Ow, ow, please don\'t grind your fists into my temples..."' AX;
+	セリフ(1001, "");
+	'"All you need to do is shut up and do what I say."' AX;
+	セリフ(1013, "");
+	'"Uuugh... yes, sir..."' AX;
+	'Sill nodded meekly, crying.' AX;
+	'Hmph, she should\'ve just done that from the start.' AX;
+	セリフ(1242, "");
+	'"What...? What are you thinking?"' AX;
+	セリフ(1001, "");
+	'"I\'m thinking... if you want my help, you\'ll swear' R;
+	'`complete obedience to me."' AX;
+	セリフ(1242, "");
+	'"Hmph, if I have to rely on a lowlife like you for help, I\'d' R;
+	'`rather rot here."' AX;
+	セリフ(1001, "");
+	'"Heh heh heh... I wonder how long you\'ll be able to keep' R;
+	'`that attitude up... Gahahahahaha!"' AX;
+	'[ Rance lost 2 points of conscience ]' R;
+	'[ Rance gained 4 points of Demon King ]' R;
+	'[ This has no bearing on the actual game. ]' AX;
+	ｶﾙﾏ -= 2;
+	return;
+}

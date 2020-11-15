@@ -1,0 +1,45 @@
+void アイ共通_買う世色癌()
+{
+	セリフ(1141, "");
+	'"It\'s recovery medicine made by Happiness' R;
+	'`Pharmaceutical. How many would you like?"' AX;
+	選択肢登録(1, "1 (2 Gold)", -1, 0);
+	選択肢登録(3, "3 (6 Gold)", -1, 0);
+	選択肢登録(10, "10 (20 Gold)", -1, 0);
+	選択肢登録(50, "50 (100 Gold)", -1, 0);
+	選択肢登録(99, "Nothing", 0, 0);
+	int sel = 選択実行(0, 0);
+	if (sel == 99)
+	{
+		アイ共通_ﾔﾒﾀﾞ();
+		return;
+	}
+	if (所持金() < sel * 2)
+	{
+		アイ共通_OUT();
+		return;
+	}
+	if (sel == 1)
+	{
+		アイ共通_MS1();
+	}
+	if (sel == 3)
+	{
+		アイ共通_MS2();
+	}
+	if (sel == 10)
+	{
+		アイ共通_MS3();
+	}
+	if (sel == 50)
+	{
+		アイ共通_MS4();
+	}
+	'Bought ' N(sel, 0, 0);
+	' Seirogan.' R;
+	世色癌 += sel;
+	お支払い(sel * 2);
+	'(Seirogan: ' N(世色癌, 0, 0);
+	')' AX;
+	return;
+}

@@ -1,0 +1,6 @@
+void アイ共通_MS3()
+{
+	セリフ(1141, "");
+	'"Wow! Ten Seirogan. Thanks, thanks."' AX;
+	return;
+}

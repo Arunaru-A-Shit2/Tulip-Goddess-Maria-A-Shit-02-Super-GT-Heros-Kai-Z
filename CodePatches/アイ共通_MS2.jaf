@@ -1,0 +1,6 @@
+void アイ共通_MS2()
+{
+	セリフ(1141, "");
+	'"Alright, three Seirogan. Thank you very much!"' AX;
+	return;
+}

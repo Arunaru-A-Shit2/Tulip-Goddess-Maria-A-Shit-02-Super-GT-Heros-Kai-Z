@@ -1,0 +1,34 @@
+void Ｍ１／鍵見つからない／蒸発の実があれば()
+{
+	セリフ(1013, "");
+	'"Master, I think it\'s going to be hard to find the key' R;
+	'`here..."' AX;
+	セリフ(1001, "");
+	'"Urrrgh..."' AX;
+	セリフ(1001, "");
+	'"Gaaah! That idiooot! Where the hell\'d she drop it?!"' AX;
+	セリフ(1003, "");
+	'"Ahhh... If only the water weren\'t here. It\'d be way' R;
+	'`easier to look..."' AX;
+	セリフ(1011, "");
+	'"Oh! That\'s it, Master! We can buy an evaporation fruit at the' R;
+	'`item shop!"' AX;
+	セリフ(1003, "");
+	'"Evapo-what now?"' AX;
+	セリフ(1011, "");
+	'"It\'s a mysterious fruit that can evaporate all this water.' R;
+	'`I\'m sure we can find the key if we use one."' AX;
+	セリフ(1001, "");
+	'"Oh yeah? Then let\'s go buy one!"' AX;
+	セリフ(1001, "");
+	'"But first..."' AX;
+	'Whack!' AX;
+	セリフ(1013, "");
+	'"Eep!"' AX;
+	セリフ(1001, "");
+	'"If you knew about something so convenient, you' R;
+	'`should\'ve remembered earlier, stupid!"' AX;
+	セリフ(1013, "");
+	'"S-Sorry... *sob* *sob*..."' AX;
+	return;
+}

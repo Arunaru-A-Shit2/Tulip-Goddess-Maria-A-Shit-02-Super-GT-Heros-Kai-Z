@@ -1,0 +1,24 @@
+void ƒLƒƒ‚x_g‚¤–ò()
+{
+	'Currently';
+	' ' N(Œ³‹C–ò, 0, 0);
+	' Seirogan 2 in possession.' R;
+	'Who will use one?' B;
+	‘I‘ğˆ“o˜^(1, "Rance", -1, 0);
+	‘I‘ğˆ“o˜^(2, "Sill", -1, 0);
+	‘I‘ğˆ“o˜^(3, "Back", 0, 0);
+	int sel = ‘I‘ğÀs(1, 0);
+	if (sel == 1)
+	{
+		ƒLƒƒ‚x_R×İ½();
+	}
+	if (sel == 2)
+	{
+		ƒLƒƒ‚x_R¼¨Ù();
+	}
+	if (sel == 3 || sel == 0)
+	{
+		ƒLƒƒ‚x_RÔÒÙ();
+	}
+	return;
+}

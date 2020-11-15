@@ -1,0 +1,51 @@
+void １章／持ち物()
+{
+	'[Money]' R;
+	'' R;
+	N(所持金(), 0, 0);
+	' Gold.' AX;
+	if (世色癌 != 0)
+	{
+		'[Seirogan]' R;
+		'Happiness Pharmaceutical\'s cure-all drug.' R;
+		'Recovers 10 HP.' R;
+		'Currently' R;
+		N(世色癌, 0, 0);
+		' in possession.' AX;
+	}
+	if (帰り木 != 0)
+	{
+		'[Return Wood]' R;
+		'A convenient item that returns the user to town from' R;
+		'anywhere in the dungeon (one-use).' R;
+		'Currently' R;
+		N(帰り木, 0, 0);
+		' in possession.' AX;
+	}
+	if (▲ネイの依頼 == 2 && ▲にんじんの鍵の話 == 0)
+	{
+		'[Frog Earring]' R;
+		'The earring Nay was looking for.' R;
+		'We\'ve been asked to find it and bring it to her.' AX;
+	}
+	if (にんじんの鍵 == 1)
+	{
+		ミニビジュアル(11101, 1, 1);
+		'[Carrot Key]' R;
+		'A strange key shaped like a bunny eating a carrot.' R;
+		'With this, we can enter the room Maria\'s hiding in.' AX;
+		ミニビジュアル(0, 1, 1);
+	}
+	if (蒸発の実 == 1)
+	{
+		'[Evaporation Fruit]' R;
+		'A mysterious fruit that can evaporate a lake.' R;
+		'It smells a little like uroron.' AX;
+	}
+	'[Sill Plain]' R;
+	'My slave, a level '	N(CD[2].レベル, 0, 0);' mage.' R;
+	'She helps with battle, housework, taking care of me, and' R;
+	'relieving my sexual desires.' R;
+	'She\'s super useful and can do basically anything.' AX;
+	return;
+}

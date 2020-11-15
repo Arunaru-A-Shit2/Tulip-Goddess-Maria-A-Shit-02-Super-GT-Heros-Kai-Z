@@ -1,0 +1,24 @@
+void –ò‰®‚y_”ƒ‚¤ƒNƒXƒŠ()
+{
+	ƒZƒŠƒt(1053, "");
+	'"The Seirogan 2. It\'s one for 50 Gold. They work great.' R;
+	'`How many do you want?"' AX;
+	‘I‘ğˆ“o˜^(1, "1 (50)", -1, 0);
+	‘I‘ğˆ“o˜^(2, "5 (250)", -1, 0);
+	‘I‘ğˆ“o˜^(3, "10 (500)", -1, 0);
+	‘I‘ğˆ“o˜^(9, "Back", 0, 0);
+	int sel = ‘I‘ğÀs(1, 0);
+	if (sel == 1)
+	{
+		–ò‰®‚y_1º();
+	}
+	if (sel == 2)
+	{
+		–ò‰®‚y_5º();
+	}
+	if (sel == 3)
+	{
+		–ò‰®‚y_10º();
+	}
+	return;
+}

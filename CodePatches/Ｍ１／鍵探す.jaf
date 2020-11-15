@@ -1,0 +1,62 @@
+void Ｍ１／鍵探す()
+{
+	セリフ(1001, "");
+	'"Sill, I order you to find the carrot key."' AX;
+	if (▲湖蒸発 == 1)
+	{
+		if (MAP == 18)
+		{
+			'Sill rummaged around for the key. 30 seconds pass...' R;
+			'Doesn\'t look like she\'s finding it.' AX;
+			セリフ(1003, "");
+			'"Daaah! Where the hell is it?! I\'m getting pissed!"' AX;
+			ミニビジュアル(11101, 1, 1);
+			セリフ(1011, "");
+			'"Oh, Master, is this it?"' AX;
+			セリフ(1001, "");
+			'"Ooh, there we go!"' AX;
+			セリフ(1001, "");
+			'"Looks like a carrot key to me!"' AX;
+			セリフ(1001, "");
+			'"Good work, Sill."' AX;
+			セリフ(1011, "");
+			'"Eheheh."' AX;
+			セリフ(1001, "");
+			'"Alright, we\'re one step closer to Maria now."' AX;
+			'Rance obtained [carrot key]!' R;
+			'(Da-da-da-da da-da-da!)' AX;
+			ミニビジュアル(0, 1, 1);
+			にんじんの鍵 = 1;
+			return;
+		}
+		セリフ(1011, "");
+		'"Master, I looked, but I don\'t think the key is here."' AX;
+		セリフ(1001, "");
+		'"Fine, let\'s look somewhere else."' AX;
+		return;
+	}
+	if (▲鍵探しカウンター > 2 && ▲にんじんの鍵の話 == 1)
+	{
+		Ｍ１／鍵見つからない／蒸発の実があれば();
+		▲にんじんの鍵の話 = 2;
+		return;
+	}
+	if (蒸発の実 == 1)
+	{
+		セリフ(1011, "");
+		'"Yes... but... it\'ll be hard to find it in the water... I\'ll look,' R;
+		'`but... Hmm, hmm..."' AX;
+		'Three minutes later...' AX;
+		セリフ(1011, "");
+		'"I think we should use the evaporation fruit to get rid of the' R;
+		'`water before we search."' AX;
+		return;
+	}
+	セリフ(1011, "");
+	'"Master, the water\'s so cloudy, I don\'t think we\'re' R;
+	'`going to find the key here."' AX;
+	セリフ(1001, "");
+	'"Gah! Just put some more effort into it!"' AX;
+	▲鍵探しカウンター += 1;
+	return;
+}

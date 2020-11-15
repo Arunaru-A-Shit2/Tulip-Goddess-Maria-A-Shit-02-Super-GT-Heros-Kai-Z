@@ -1,0 +1,23 @@
+void Ｍ１／買う蒸発の実()
+{
+	セリフ(1003, "");
+	'"Hey, hand over an evaporation fruit."' AX;
+	セリフ(1141, "");
+	'"I\'m sorry, we\'re all out!"' AX;
+	セリフ(1003, "");
+	'"Wh-What...?"' AX;
+	セリフ(1141, "");
+	'"You just missed the last one."' AX;
+	'...This can\'t be. We can\'t look for the key now.' AX;
+	'Is this... the end of our adventure?' AX;
+	'...No, wait. We just have to steal it from the guy who' R;
+	'bought it. It won\'t even cost money that way.' R;
+	'Hohohohoho.' AX;
+	セリフ(1001, "");
+	'"Hey, who\'s the idiot who bought the last one?"' AX;
+	セリフ(1141, "");
+	'"The bartender."' AX;
+	'The bartender, eh...? Heheheh. He\'s only got his own' R;
+	'luck to blame.' AX;
+	return;
+}

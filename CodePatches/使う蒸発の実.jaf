@@ -1,0 +1,34 @@
+void 使う蒸発の実()
+{
+	if (mI == 33)
+	{
+		▲湖蒸発 = 1;
+		蒸発の実 = 0;
+		セリフ(1001, "");
+		'"Alright, use the evaporation fruit, Sill."' AX;
+		セリフ(1001, "");
+		'"Make sure you get all this water."' AX;
+		セリフ(1011, "");
+		'"R-Right."' AX;
+		セリフ(1011, "");
+		'"Here I go!"' AX;
+		'Plop...' AX;
+		全画面色(255, 255, 255);
+		全表示(1, 500);
+		ダンＢ_マップ(0);
+		全画面色(-2147483648, -2147483648, -2147483648);
+		全表示(1, 1000);
+		'She dropped the evaporation fruit into the lake and so much' R;
+		'steam exploded into the air that everything went white' R;
+		'for a second.' AX;
+		セリフ(1001, "");
+		'"Koff, koff! Well, it\'s easier to move here now."' AX;
+		return;
+	}
+	セリフ(1011, "");
+	'"We can\'t use that here."' AX;
+	セリフ(1001, "");
+	'"Shut up."' AX;
+	return;
+	return;
+}

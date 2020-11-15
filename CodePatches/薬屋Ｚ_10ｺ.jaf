@@ -1,0 +1,15 @@
+void 薬屋Ｚ_10ｺ()
+{
+	if (所持金() < 500)
+	{
+		薬屋Ｚ_ｶﾈﾅｼ();
+		return;
+	}
+	セリフ(1053, "");
+	'"Here, I\'ll thrown in an extra one on the house."' AX;
+	お支払い(500);
+	元気薬 = 元気薬 + 11;
+	'Now have ' N(元気薬, 0, 0);
+	' Seirogan 2.' AX;
+	return;
+}
